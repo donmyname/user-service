@@ -1,0 +1,30 @@
+server:
+  port: 8183
+spring:
+  application:
+    name: user-service
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3308/test_project_db
+    username: root
+    password: root
+    hikari:
+      minIdle: 10
+      idle-timeout: 10000
+      maximum-pool-size: 30
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+
+
+
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    hostname: localhost

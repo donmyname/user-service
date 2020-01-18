@@ -1,6 +1,6 @@
 # Eureka Client Service
 
-This is a simple example of how Eureka Cient Service Registration and Discovery works, only for learning purpose
+This is a simple example of how Eureka Client Service Registration and Discovery works, only for learning purpose
 
 
 ## Usage
